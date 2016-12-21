@@ -1,12 +1,10 @@
 const TelegramBot = require('node-telegram-bot-api');
 
 // replace the value below with the Telegram token you receive from @BotFather
-var token = '190927910:AAHOqOyug82MVeRQlvYYVgxRNjtaVYnQnns';
 
 // Create a bot that uses 'polling' to fetch new updates
 var bot = new TelegramBot(token, { polling: true });
 
-// Matches "/echo [whatever]"
 bot.onText(/\/echo (.+)/, function (msg, match) {
   // 'msg' is the received Message from Telegram
   // 'match' is the result of executing the regexp above on the text content
