@@ -35,7 +35,12 @@ bot.on('message', function (msg) {
         bot.sendMessage(chatId, "Did you mean Super-Mom?");
     else if(msg.text === "dad" || msg.text === "Dad")
         bot.sendMessage(chatId, "Damn, look at this guy's muscles..");
-
+    
+    else{
+        var date = new Date();
+        var current_hour = date.getHours();
+        bot.sendMessage(chatId, "You sent this message at: " + current_hour);
+    }
   // send a message to the chat acknowledging receipt of their message
   //bot.sendMessage(chatId, "You said: " + msg.text);
 
