@@ -2,9 +2,9 @@
   "name": "bottest",
   "version": "1.0.0",
   "description": "",
-  "main": "app.js",
+  "main": "bot.js",
   "scripts": {
-    "start": "node app.js"
+    "start": "node bot.js"
   },
   "author": "",
   "license": "ISC",
